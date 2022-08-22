@@ -177,7 +177,7 @@ export const WriteEndpoint = (
   wr.out("} catch(e) {", true);
   wr.indent(1);
   wr.out("res.status(e.statusCode || 400);", true);
-  wr.out(`res.json( e );`, true);
+  //wr.out(`res.json( e );`, true);
   wr.indent(-1);
   wr.out("}", true);
   wr.indent(-1);
